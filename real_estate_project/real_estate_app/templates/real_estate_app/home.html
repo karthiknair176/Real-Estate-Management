@@ -1,0 +1,16 @@
+<!-- templates/real_estate_app/home.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">  <!-- Example of loading a CSS file -->
+</head>
+<body>
+    <h1>Welcome to the Real Estate Platform</h1>
+    <p>This is the home page.</p>
+    <p><a href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">Sign Up</a></p>
+</body>
+</html>
